@@ -1,40 +1,9 @@
-# Reveal.js
-## <span>&amp;</span>yet Style
+<!--- ## <span>&amp;</span>yet Style -->
+# This  {.class="fragment"}
+#<span class="fragment">Internship</span>
+# Thing  {.class="fragment"}
 
-![&yet](images/logos/andyet.svg)
-
-Luke Karrys
-
-
-
----
-
-
-
-## Notes Slide
-
-This slide has some notes. Hit s.
-
-Notes:
-- Note 1
-- Note 2
-- Notes and notes and notes.
-
-
-
---
-
-
-
-## Vertical slide
-
-
-
---
-
-
-
-## Vertical slide 2
+Bentley Jensen
 
 
 
@@ -42,24 +11,119 @@ Notes:
 
 
 
-## **JS** is cool
+#<span>&amp;</span>yet
+![yeti](images/yeti.jpg) {.class="fragment"}
 
-```javascript
-// comment
-var x = 100,
-    y = ['a', 100, {}],
-    z = {
-        x: 'z'
+
+
+---
+
+
+
+#My Qualifications
+ * Taking MultiMedia Atrs: Web Design and Computer Science I {.class="fragment"}
+ * **_My interest_** {.class="fragment"}
+
+
+
+---
+
+
+
+#My "Interview" {.class="fragment"}
+- Prepared to interview a lot of places {.class="fragment"}
+- Didn't think I was good enough to get into this one {.class="fragment"}
+- They didn't even really have an internship at first {.class="fragment"}
+
+
+
+---
+
+
+
+## The Office
+
+
+
+---
+
+
+
+![img](images/office1.jpg)
+ 
+
+
+---
+
+
+
+![img](images/office2.jpg)
+
+
+
+---
+
+
+
+![img](images/office3.jpg)
+
+
+
+---
+
+
+
+![img](images/office4.jpg)
+
+
+
+---
+
+
+
+![img](images/office5.jpg)
+
+
+
+---
+
+
+
+#What I do {.class="fragment"}
+
+<pre class="fragment" width="80" height="50"><code class="javascript" width="100" height="100">
+var canvas=document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.canvas.width  = window.innerWidth;
+ctx.canvas.height = window.innerHeight;
+
+var primus = Primus.connect('laptop.local/draw');
+
+primus.on('open', function () {
+    console.log("Connection is Open.");
+    primus.write("requestLog");
+});
+
+primus.on('data', function  (data) {
+        console.log(data);
+    if(data.id=='dot'){
+        var xLog = data.xCoord;
+        var yLog = data.yCoord;
+        var userColorLog=data.color;
+        var dotSizeLog=data.diam;
+        
+        //draw the circle 
+        ctx.beginPath();
+               //x-pos, y-pos, diameter, start angle, end angle in radians
+        ctx.arc(xLog,yLog,dotSizeLog,0,2*Math.PI);
+        ctx.fillStyle=userColorLog;
+        ctx.fill();
+    }
+    if (data=='erased!') {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
     };
-// IIFE
-(function ($, window, undefined) {
-    // What am I doing?
-    var _test = function () {};
-    return {
-        test: _test
-    };
-})(jQuery, window)
-```
+});
+</code></pre>
 
 
 
@@ -67,10 +131,85 @@ var x = 100,
 
 
 
-## Slide Heading
-### Sub Heading
+#My Project
+- Backend {.class="fragment"}
+- Clientside {.class="fragment"}
+- Magic Inbetween {.class="fragment"}
 
-Some text. *Italic.* **Bold.**
+
+
+---
+
+
+
+#To Make {.class="fragment"}
+#A <span class="fragment">Whiteboard!</span>{.class="fragment"}
+
+
+
+---
+
+
+
+#PSH!  {.class="fragment"}
+##_Easy._  {.class="fragment"}
+
+
+
+<section data-transition="none">
+![img](./images/Screencast1.png)
+</section>
+
+
+
+---
+
+
+
+![img](./images/Screencast2.png){.data-transition="fast"}
+
+
+
+---
+
+
+
+![img](./images/Screencast3.png){.data-transition="none"}
+
+
+
+---
+
+
+
+![img](./images/Screencast4.png){.data-transition="none"}
+
+
+
+---
+
+
+
+![img](images/drawing.gif){.stretch="true"}
+
+
+
+---
+
+
+
+#Connecting <span>Course</span>
+* MMA Web Design{.class="fragment"}
+	* HTML{.class="fragment"}
+* Comp Sci I{.class="fragment"}
+	* Basic Prgramming Logic{.class="fragment"}
+
+
+
+---
+
+
+
 
 
 
@@ -80,39 +219,9 @@ Some text. *Italic.* **Bold.**
 
 # Big **Title** Slide {.class="big"}
 
-
-
----
-
-
-
-## Bulleted Fragment List
-
-- This is a <span>thing</span> {.class="fragment"}
-- This is <span>thing</span> thing {.class="fragment"}
-- Thing <span>3</span> {.class="fragment"}
-
-
-
----
-
-
-
-## Slide with an image
-
-![img](images/andbang.png)
-
-
-
----
-
-
-
-## More slides
-
 > This is a blockqoute!  
 > Line 2  
-> <small>Luke?</small>
+> <small class="fragment">Luke?</small>
 
 
 
