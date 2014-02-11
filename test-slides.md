@@ -49,14 +49,16 @@ Bentley Jensen
 
 
 
+<!-- slide-attributes: data-transition=none -->
 ![img](images/office1.jpg)
- 
+
 
 
 ---
 
 
 
+<!-- slide-attributes: data-transition=none -->
 ![img](images/office2.jpg)
 
 
@@ -65,6 +67,7 @@ Bentley Jensen
 
 
 
+<!-- slide-attributes: data-transition=none -->
 ![img](images/office3.jpg)
 
 
@@ -73,6 +76,7 @@ Bentley Jensen
 
 
 
+<!-- slide-attributes: data-transition=none -->
 ![img](images/office4.jpg)
 
 
@@ -81,6 +85,7 @@ Bentley Jensen
 
 
 
+<!-- slide-attributes: data-transition=none -->
 ![img](images/office5.jpg)
 
 
