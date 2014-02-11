@@ -56,9 +56,11 @@
                 previewLinks: true,
 
                 parallaxBackgroundImage: "images/clouds.png",
-                parallaxBackgroundSize: '1895px 160px',
-                parallaxBackgroundHorizontal: 150,
-                parallaxBackgroundVertical: 30,
+                // When removed these properties turn off the clouds animation when switching slides
+                // Unfortunately, theres no way to turn off the clouds animation on a slide by slide basis
+                // parallaxBackgroundSize: '1895px 160px',
+                // parallaxBackgroundHorizontal: 150,
+                // parallaxBackgroundVertical: 30,
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
                 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
